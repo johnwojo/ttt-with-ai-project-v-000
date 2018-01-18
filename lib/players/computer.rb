@@ -1,4 +1,4 @@
-require 'pry'
+
 module Players
 
   class Computer < Player
@@ -66,7 +66,7 @@ module Players
 
       elsif board.taken?("#{bottom_corner}")
         "#{other_bottom_corner}"
-        
+
       elsif board.cells[6] == self.token && board.cells[8] == self.token
         "8"
       else
