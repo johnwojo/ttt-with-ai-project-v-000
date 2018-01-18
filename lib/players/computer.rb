@@ -5,15 +5,12 @@ module Players
 
     def move(board)
       corner = ["1","3","7","9"].sample
-    
+
       if !board.taken?(5)
         "5"
 
       elsif !board.taken?("#{corner}")
         "#{corner}"
-
-      elsif board.taken?("#{top_corner}")
-        "#{other_top_corner}"
 
       elsif board.cells[0] == self.token && board.cells[2] == self.token
         "2"
