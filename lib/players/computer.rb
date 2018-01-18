@@ -15,32 +15,11 @@ module Players
       elsif board.cells[0] == self.token && board.cells[2] == self.token
         "2"
 
-
-      elsif !board.taken?("#{left_corner}")
-        "#{left_corner}"
-
-      elsif board.taken?("#{left_corner}")
-        "#{other_left_corner}"
-
       elsif board.cells[0] == self.token && board.cells[6] == self.token
         "4"
 
-
-
-      elsif !board.taken?("#{right_corner}")
-        "#{right_corner}"
-
-      elsif board.taken?("#{right_corner}")
-        "#{other_right_corner}"
-
       elsif board.cells[2] == self.token && board.cells[8] == self.token
         "6"
-
-      elsif !board.taken?("#{bottom_corner}")
-        "#{bottom_corner}"
-
-      elsif board.taken?("#{bottom_corner}")
-        "#{other_bottom_corner}"
 
       elsif board.cells[6] == self.token && board.cells[8] == self.token
         "8"
