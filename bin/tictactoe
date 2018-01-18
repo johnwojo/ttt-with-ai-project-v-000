@@ -46,3 +46,4 @@ number_of_players = gets.strip
           new_game = Game.new
           new_game.start
       end
+    end
