@@ -4,7 +4,7 @@ module Players
   class Computer < Player
 
     def move(board)
-      corner = ["1","3","7","9"]
+      corner = ["1","3","7","9"].sample
       if top_corner == "1"
         other_top_corner == "3"
       elsif top_corner == "3"
