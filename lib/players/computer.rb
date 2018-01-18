@@ -5,29 +5,7 @@ module Players
 
     def move(board)
       corner = ["1","3","7","9"].sample
-      if top_corner == "1"
-        other_top_corner == "3"
-      elsif top_corner == "3"
-        other_top_corner == "1"
-
-      bottom_corner = ["7","9"].sample
-      if bottom_corner == "7"
-        other_bottom_corner == "9"
-      elsif top_corner == "9"
-        other_top_corner == "7"
-
-      left_corner = ["1","7"].sample
-      if left_corner == "1"
-        other_left_corner == "7"
-      elsif left_corner == "7"
-        other_left_corner == "1"
-
-      right_corner = ["3","9"].sample
-      if right_corner == "3"
-        other_right_corner == "9"
-      elsif right_corner == "9"
-        other_right_corner == "3"
-
+    
       if !board.taken?(5)
         "5"
 
