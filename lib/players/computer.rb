@@ -9,8 +9,8 @@ module Players
       if !board.taken?(5)
         "5"
 
-      elsif !board.taken?("#{top_corner}")
-        "#{top_corner}"
+      elsif !board.taken?("#{corner}")
+        "#{corner}"
 
       elsif board.taken?("#{top_corner}")
         "#{other_top_corner}"
